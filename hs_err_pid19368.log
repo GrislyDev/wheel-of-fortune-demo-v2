@@ -1,0 +1,177 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffbb77e1c41, pid=19368, tid=17484
+#
+# JRE version:  (11.0.14.1+1) (build )
+# Java VM: OpenJDK 64-Bit Server VM (11.0.14.1+1, mixed mode, sharing, tiered, unknown gc, windows-amd64)
+# Problematic frame:
+# C  [jimage.dll+0x1c41]
+#
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: 
+
+Host: AMD Ryzen 3 1200 Quad-Core Processor           , 4 cores, 7G,  Windows 10 , 64 bit Build 19041 (10.0.19041.3636)
+Time: Fri Apr  5 05:28:49 2024 Финляндия (лето) elapsed time: 0.010076 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread is native thread
+
+Stack: [0x0000007db8800000,0x0000007db8900000],  sp=0x0000007db88fd1d0,  free space=1012k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [jimage.dll+0x1c41]
+
+
+siginfo: EXCEPTION_ACCESS_VIOLATION (0xc0000005), reading address 0x000000000000de14
+
+
+Registers:
+RAX=0x000000000000377e, RBX=0x0000007db88fd2c1, RCX=0x00007ffbb77e6000, RDX=0x000000000000377e
+RSP=0x0000007db88fd1d0, RBP=0x0000007db88fd2c0, RSI=0x00000000000084db, RDI=0x0000007db88fd2c0
+R8 =0x00007ffbb77e4278, R9 =0x000000000000001c, R10=0x00007ffba3c08c00, R11=0x00007ffbb77e6000
+R12=0x0000007db88ff960, R13=0x0000000000000000, R14=0x0000007db88fe330, R15=0x00007ffba3c08c58
+RIP=0x00007ffbb77e1c41, EFLAGS=0x0000000000010212
+
+Top of Stack: (sp=0x0000007db88fd1d0)
+0x0000007db88fd1d0:   00007ffbb77e8000 0000000000000000
+0x0000007db88fd1e0:   00007ffb01000020 0000007db88fd990
+0x0000007db88fd1f0:   0000027c9a327ad0 00007ffbb77e1dcf
+0x0000007db88fd200:   000000000000000b 0000027c9a327ad0
+0x0000007db88fd210:   0000000000000070 0000000000000000
+0x0000007db88fd220:   0000000000000000 0000000000000000
+0x0000007db88fd230:   0000000000000000 0000000000000000
+0x0000007db88fd240:   0000000000000000 0000000000000000
+0x0000007db88fd250:   0000000000000000 0000000000000000
+0x0000007db88fd260:   000025c18367891f 0000000000000000
+0x0000007db88fd270:   00007ffba3be5b18 0000000000000017
+0x0000007db88fd280:   0000027c9a327ad0 0000007db88fe330
+0x0000007db88fd290:   000000000000000b 00007ffbb77e26ad
+0x0000007db88fd2a0:   0000000000000002 0000000000000002
+0x0000007db88fd2b0:   00008b7766930000 00008b7766930271
+0x0000007db88fd2c0:   61622e6176616a2f 692f6b646a2f6573 
+
+Instructions: (pc=0x00007ffbb77e1c41)
+0x00007ffbb77e1b41:   48 85 c9 74 1d 80 3d c3 44 00 00 00 74 06 48 8b
+0x00007ffbb77e1b51:   53 18 eb 04 48 8b 53 40 e8 ae 0e 00 00 48 83 63
+0x00007ffbb77e1b61:   48 00 8b 4b 0c 83 f9 ff 74 09 e8 e4 0c 00 00 83
+0x00007ffbb77e1b71:   4b 0c ff 48 8b 4b 70 48 85 c9 74 0f ba 10 00 00
+0x00007ffbb77e1b81:   00 e8 fd 0e 00 00 48 83 63 70 00 48 83 c4 20 5b
+0x00007ffbb77e1b91:   c3 cc cc 40 53 48 83 ec 20 48 8b d9 48 8d 0d 7c
+0x00007ffbb77e1ba1:   46 00 00 e8 b3 0c 00 00 83 6b 08 01 75 24 48 8b
+0x00007ffbb77e1bb1:   d3 48 8d 0d 5f 44 00 00 e8 22 08 00 00 48 8b cb
+0x00007ffbb77e1bc1:   e8 82 fe ff ff ba 78 00 00 00 48 8b cb e8 b1 0e
+0x00007ffbb77e1bd1:   00 00 48 8d 0d 46 46 00 00 48 83 c4 20 5b e9 80
+0x00007ffbb77e1be1:   0c 00 00 48 89 5c 24 08 48 89 74 24 10 57 48 83
+0x00007ffbb77e1bf1:   ec 20 41 8b f1 4d 8b c8 48 8b fa 4c 8b d9 4d 85
+0x00007ffbb77e1c01:   c0 74 78 85 f6 74 74 44 8a 12 48 8d 5a 01 48 8b
+0x00007ffbb77e1c11:   d3 b8 93 01 00 01 eb 12 69 c0 93 01 00 01 41 0f
+0x00007ffbb77e1c21:   b6 ca 44 8a 12 33 c1 48 ff c2 45 84 d2 75 e9 4d
+0x00007ffbb77e1c31:   8b 03 0f ba f0 1f 33 d2 49 8b cb f7 f6 48 63 c2
+0x00007ffbb77e1c41:   41 8b 14 81 41 ff 50 08 85 c0 7e 24 8a 0f eb 10
+0x00007ffbb77e1c51:   69 c0 93 01 00 01 0f b6 c9 33 c1 8a 0b 48 ff c3
+0x00007ffbb77e1c61:   84 c9 75 ec 0f ba f0 1f 33 d2 f7 f6 8b c2 eb 0e
+0x00007ffbb77e1c71:   79 09 83 c9 ff 2b c8 8b c1 eb 03 83 c8 ff 48 8b
+0x00007ffbb77e1c81:   5c 24 30 48 8b 74 24 38 48 83 c4 20 5f c3 cc 48
+0x00007ffbb77e1c91:   89 5c 24 08 48 89 74 24 10 57 48 83 ec 20 48 8b
+0x00007ffbb77e1ca1:   f1 48 8d 0d 77 45 00 00 e8 ae 0b 00 00 33 ff 39
+0x00007ffbb77e1cb1:   3d 62 43 00 00 76 24 48 8b 05 61 43 00 00 48 8b
+0x00007ffbb77e1cc1:   d6 48 8b 1c f8 48 8b 0b e8 32 1f 00 00 85 c0 74
+0x00007ffbb77e1cd1:   2b ff c7 3b 3d 3e 43 00 00 72 dc 33 db 48 8d 0d
+0x00007ffbb77e1ce1:   3b 45 00 00 e8 7a 0b 00 00 48 8b 74 24 38 48 8b
+0x00007ffbb77e1cf1:   c3 48 8b 5c 24 30 48 83 c4 20 5f c3 ff 43 08 eb
+0x00007ffbb77e1d01:   dc cc cc 48 89 5c 24 08 48 89 74 24 10 57 48 83
+0x00007ffbb77e1d11:   ec 20 48 8b d9 48 8b f2 48 8b 49 10 49 8b f8 8b
+0x00007ffbb77e1d21:   53 30 48 8b 01 ff 50 20 4c 8b 43 50 48 8b d6 48
+0x00007ffbb77e1d31:   8b 4b 10 44 8b c8 e8 a8 fe ff ff 83 f8 ff 74 38 
+
+
+
+---------------  P R O C E S S  ---------------
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+
+Dynamic libraries:
+0x00007ff618e50000 - 0x00007ff618e5d000 	D:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\Data\PlaybackEngines\AndroidPlayer\OpenJDK\bin\java.exe
+0x00007ffbdfff0000 - 0x00007ffbe01e8000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00007ffbdfae0000 - 0x00007ffbdfb9d000 	C:\Windows\System32\KERNEL32.DLL
+0x00007ffbdd850000 - 0x00007ffbddb46000 	C:\Windows\System32\KERNELBASE.dll
+0x00007ffbddce0000 - 0x00007ffbddde0000 	C:\Windows\System32\ucrtbase.dll
+0x00007ffbb1540000 - 0x00007ffbb1557000 	D:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\Data\PlaybackEngines\AndroidPlayer\OpenJDK\bin\jli.dll
+0x00007ffbb23b0000 - 0x00007ffbb23c5000 	D:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\Data\PlaybackEngines\AndroidPlayer\OpenJDK\bin\VCRUNTIME140.dll
+0x00007ffbdf7c0000 - 0x00007ffbdf95e000 	C:\Windows\System32\USER32.dll
+0x00007ffbddcb0000 - 0x00007ffbddcd2000 	C:\Windows\System32\win32u.dll
+0x00007ffbcfa70000 - 0x00007ffbcfd0a000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.3636_none_60b6a03d71f818d5\COMCTL32.dll
+0x00007ffbde550000 - 0x00007ffbde57b000 	C:\Windows\System32\GDI32.dll
+0x00007ffbddde0000 - 0x00007ffbddef7000 	C:\Windows\System32\gdi32full.dll
+0x00007ffbdfc30000 - 0x00007ffbdfcce000 	C:\Windows\System32\msvcrt.dll
+0x00007ffbddf00000 - 0x00007ffbddf9d000 	C:\Windows\System32\msvcp_win.dll
+0x00007ffbdee50000 - 0x00007ffbdee82000 	C:\Windows\System32\IMM32.DLL
+0x00007ffbb0be0000 - 0x00007ffbb0c7b000 	D:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\Data\PlaybackEngines\AndroidPlayer\OpenJDK\bin\msvcp140.dll
+0x00007ffba3370000 - 0x00007ffba3ef1000 	D:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\Data\PlaybackEngines\AndroidPlayer\OpenJDK\bin\server\jvm.dll
+0x00007ffbdeda0000 - 0x00007ffbdee50000 	C:\Windows\System32\ADVAPI32.dll
+0x00007ffbdf9d0000 - 0x00007ffbdfa70000 	C:\Windows\System32\sechost.dll
+0x00007ffbdfe80000 - 0x00007ffbdffa5000 	C:\Windows\System32\RPCRT4.dll
+0x00007ffbddfa0000 - 0x00007ffbddfc7000 	C:\Windows\System32\bcrypt.dll
+0x00007ffbdf790000 - 0x00007ffbdf798000 	C:\Windows\System32\PSAPI.DLL
+0x00007ffbbe3c0000 - 0x00007ffbbe3c9000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x00007ffbd50f0000 - 0x00007ffbd5117000 	C:\Windows\SYSTEM32\WINMM.dll
+0x00007ffbdfa70000 - 0x00007ffbdfadb000 	C:\Windows\System32\WS2_32.dll
+0x00007ffbd6be0000 - 0x00007ffbd6bea000 	C:\Windows\SYSTEM32\VERSION.dll
+0x00007ffbdb570000 - 0x00007ffbdb582000 	C:\Windows\SYSTEM32\kernel.appcore.dll
+0x00007ffbba880000 - 0x00007ffbba890000 	D:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\Data\PlaybackEngines\AndroidPlayer\OpenJDK\bin\verify.dll
+0x00007ffbd4780000 - 0x00007ffbd4964000 	C:\Windows\SYSTEM32\DBGHELP.DLL
+0x00007ffbc9010000 - 0x00007ffbc9044000 	C:\Windows\SYSTEM32\dbgcore.DLL
+0x00007ffbdd7c0000 - 0x00007ffbdd842000 	C:\Windows\System32\bcryptPrimitives.dll
+0x00007ffbb0bb0000 - 0x00007ffbb0bd8000 	D:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\Data\PlaybackEngines\AndroidPlayer\OpenJDK\bin\java.dll
+0x00007ffbb77e0000 - 0x00007ffbb77ea000 	D:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\Data\PlaybackEngines\AndroidPlayer\OpenJDK\bin\jimage.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;D:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\Data\PlaybackEngines\AndroidPlayer\OpenJDK\bin;C:\Windows\SYSTEM32;C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.3636_none_60b6a03d71f818d5;D:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\Data\PlaybackEngines\AndroidPlayer\OpenJDK\bin\server
+
+VM Arguments:
+java_command: <unknown>
+java_class_path (initial): <not set>
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+JAVA_HOME=D:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\Data\PlaybackEngines\AndroidPlayer\OpenJDK
+JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
+PATH=C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\offic\AppData\Local\Microsoft\WindowsApps;C:\Users\offic\AppData\Local\GitHubDesktop\bin
+USERNAME=offic
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=AMD64 Family 23 Model 8 Stepping 2, AuthenticAMD
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10 , 64 bit Build 19041 (10.0.19041.3636)
+OS uptime: 9 days 12:45 hours
+
+CPU:total 4 (initial active 0) 
+
+Memory: 4k page, system-wide physical 8122M (677M free)
+TotalPageFile size 16314M (AvailPageFile size 3M)
+current process WorkingSet (physical memory assigned to process): 7M, peak: 7M
+current process commit charge ("private bytes"): 2M, peak: 3M
+
+vm_info: OpenJDK 64-Bit Server VM (11.0.14.1+1) for windows-amd64 JRE (11.0.14.1+1), built on Feb  9 2022 01:48:27 by "" with unknown MS VC++:1916
+
+END.

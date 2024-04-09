@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "311432838682",
+    "firebase_url": "https://fortune-wheel-demo-9efe5-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "fortune-wheel-demo-9efe5",
+    "storage_bucket": "fortune-wheel-demo-9efe5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311432838682:android:404208531bbd8ed2061ba3",
+        "android_client_info": {
+          "package_name": "com.GrislyDev.WheelOfFortuneDemo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2SM0T6e2jm9ovYPDPhB8i0NLnYKvbNvY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
